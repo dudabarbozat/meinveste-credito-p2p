@@ -1,0 +1,29 @@
+.voltar { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; text-decoration: none; margin-bottom: 14px; color: var(--tinta); font-size: .9rem; }
+.cartao { border-radius: 22px; padding: 20px 16px; box-shadow: 4px 6px 0 var(--cinza); }
+.etapa { display: grid; gap: 14px; }
+.etapa h2 { font-size: 1.2rem; }
+.simulacao { background: var(--lavanda); border-radius: 14px; padding: 2px 14px; }
+.simulacao div { border-bottom-color: rgba(32, 32, 29, .1); }
+.simulacao dt { color: var(--tinta); }
+
+.formas { display: grid; gap: 8px; }
+.forma { position: relative; cursor: pointer; }
+.forma input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.forma span {
+  display: grid; grid-template-columns: auto 1fr; column-gap: 12px; align-items: center; padding: 14px;
+  border: 1.5px solid var(--borda-campo); border-radius: 14px; font-weight: 700; background: var(--branco);
+}
+.forma span :global(.ic) { grid-row: span 2; width: 24px; height: 24px; color: var(--tinta-2); }
+.forma small { font-weight: 400; font-size: .78rem; color: var(--tinta-2); }
+.forma input:checked + span { border-color: var(--vinho); background: var(--vinho-claro); color: var(--vinho); }
+.forma input:checked + span :global(.ic) { color: var(--vinho); }
+.forma input:focus-visible + span { outline: 3px solid var(--foco); outline-offset: 2px; }
+
+.cronograma summary { cursor: pointer; font-weight: 700; font-size: .9rem; color: var(--vinho); padding-bottom: 6px; }
+.cronograma :global(.ajuda) { margin-bottom: 8px; }
+
+.ok { width: 56px; height: 56px; border-radius: 50%; background: var(--verde); color: #fff; display: grid; place-items: center; justify-self: center; }
+.ok :global(.ic) { width: 30px; height: 30px; }
+.centro { text-align: center; }
+.destaque { font-weight: 700; color: var(--vinho); background: var(--vinho-claro); padding: 8px 12px; border-radius: 10px; text-align: center; }
+.acoesSec { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }

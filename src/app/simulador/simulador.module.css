@@ -1,0 +1,9 @@
+.form { display: grid; gap: 18px; box-shadow: 4px 6px 0 var(--cinza); }
+.resultado { margin-top: 20px; display: grid; gap: 12px; }
+.rotuloParcela { font-size: .86rem; color: var(--tinta-2); text-align: center; }
+.parcela { font-family: var(--fonte-tit); font-weight: 800; font-size: 2.4rem; color: var(--vinho); text-align: center; font-variant-numeric: tabular-nums; line-height: 1; }
+.baixo { color: var(--verde-txt); }
+.medio { color: var(--ameixa); }
+.alto { color: var(--vinho); }
+.aviso { margin: 0; }
+.cronograma summary { cursor: pointer; font-weight: 700; font-size: .9rem; color: var(--vinho); padding: 4px 0 10px; }

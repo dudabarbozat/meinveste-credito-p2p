@@ -1,0 +1,43 @@
+.guia { background: var(--lavanda); border-radius: var(--raio); padding: 14px 16px 16px; margin-bottom: 20px; }
+.guiaTopo { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.guiaTopo h2 { font-size: 1.05rem; }
+.guiaTopo :global(.icone-btn) { width: 34px; height: 34px; background: rgba(255, 255, 255, .6); }
+.guia ol { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; font-size: .88rem; }
+.guia strong { color: var(--vinho); }
+
+.hero { padding-top: 6px; }
+.slogan { font-family: var(--fonte-marca); font-weight: 500; font-size: 1rem; color: var(--tinta); margin-bottom: 10px; }
+.hero h1 { font-size: 2.15rem; }
+.hero h1 em { font-style: normal; color: var(--vinho); }
+.hero :global(.lead) { margin-top: 12px; }
+
+.heroCard {
+  display: block; margin-top: 26px; background: var(--ameixa); color: var(--app); border-radius: 26px; padding: 22px;
+  position: relative; overflow: hidden; text-decoration: none;
+}
+.heroCard::after {
+  content: ''; position: absolute; right: -30px; top: -30px; width: 110px; height: 110px;
+  border-radius: 50%; border: 18px solid rgba(255, 247, 245, .12);
+}
+.heroCard :global(.barra) { background: rgba(255, 247, 245, .25); }
+.heroCard :global(.barra span) { background: var(--pessego); }
+.heroCard :global(.skeleton span) { background: rgba(255, 247, 245, .2); }
+.hcRotulo { display: flex; align-items: center; gap: 6px; font-size: .82rem; opacity: .92; }
+.hcNome { font-family: var(--fonte-tit); font-size: 1.4rem; font-weight: 800; margin-top: 8px; }
+.hcFin { margin: 6px 0 18px; opacity: .92; font-size: .9rem; }
+.hcLinha { display: flex; justify-content: space-between; margin-top: 10px; font-size: .88rem; font-variant-numeric: tabular-nums; }
+
+.como { margin-top: 34px; }
+.passos { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 14px; }
+.passos li { display: flex; gap: 14px; align-items: center; }
+.passos h3 { font-size: 1rem; }
+.passos p { font-size: .86rem; color: var(--tinta-2); margin-top: 2px; }
+.passos strong { color: var(--vinho); }
+.passoIc { position: relative; width: 66px; height: 66px; flex: none; display: grid; place-items: center; }
+.blob { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.blob path { fill: var(--claro); }
+.blob .blobSombra { fill: var(--lavanda); }
+.passoIc > :global(.ic) { position: relative; width: 26px; height: 26px; color: var(--tinta); stroke-width: 2.2; }
+.passoVinho > :global(.ic) { color: var(--vinho); }
+
+.grade { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 14px; }

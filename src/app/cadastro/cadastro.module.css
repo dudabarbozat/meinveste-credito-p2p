@@ -1,0 +1,67 @@
+.cartaoForm { padding: 20px 16px; border-radius: 22px; }
+.formCabeca { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.formCabeca h2 { font-size: 1.2rem; }
+.etapa { display: grid; gap: 14px; }
+.texto { color: var(--tinta-2); font-size: .9rem; }
+
+.grade { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px 12px; }
+.grade > * { grid-column: 1 / -1; }
+.grade > .metade { grid-column: span 3; }
+.grade > .dois { grid-column: span 4; }
+.grade > :global(.campo):not(.largo):not(.metade):not(.dois) { grid-column: span 2; }
+.largo { grid-column: 1 / -1; }
+@media (max-width: 359px) { .grade > .metade, .grade > .dois, .grade > :global(.campo) { grid-column: 1 / -1 !important; } }
+
+.empresa { display: grid; gap: 10px; background: var(--claro); border-radius: 16px; padding: 14px; }
+.empresaTopo { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+.empresaTopo strong { font-family: var(--fonte-tit); font-size: 1.05rem; }
+.empresa :global(.linhas dd) { font-weight: 600; font-size: .86rem; max-width: 62%; overflow-wrap: anywhere; }
+
+.docs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.doc { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; padding: 12px; border: 1.5px dashed #CFC8CB; border-radius: 14px; background: var(--app); }
+.enviado { border-style: solid; border-color: var(--verde); background: #F0FAF9; }
+.docIc { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: var(--lavanda); color: var(--tinta); flex: none; }
+.enviado .docIc { background: var(--verde); color: #fff; }
+.docTxt { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.docTxt strong { font-size: .9rem; }
+.docTxt span { font-size: .8rem; color: var(--tinta-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.doc :global(.btn) { margin-left: 50px; }
+.arquivoIn:focus-visible + label { outline: 3px solid var(--foco); outline-offset: 2px; }
+
+.revisao { margin: 0; display: grid; }
+.revisao div { padding: 9px 0; border-bottom: 1px solid var(--linha); min-width: 0; }
+.revisao dt { font-size: .76rem; color: var(--tinta-2); }
+.revisao dd { margin: 2px 0 0; font-weight: 600; overflow-wrap: anywhere; }
+
+/* análise */
+.linhaTempo { list-style: none; margin: 0; padding: 0; }
+.linhaTempo li { display: flex; gap: 12px; position: relative; padding-bottom: 18px; }
+.linhaTempo li:last-child { padding-bottom: 0; }
+.linhaTempo li::before { content: ''; position: absolute; left: 15px; top: 34px; bottom: 2px; width: 2px; background: var(--lavanda); }
+.linhaTempo li:last-child::before { display: none; }
+.linhaTempo li.feito::before { background: var(--vinho); }
+.ltIc { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; flex: none; background: var(--lavanda); color: var(--tinta-2); }
+.feito .ltIc { background: var(--vinho); color: #fff; }
+.atual .ltIc { background: var(--rosa); color: #fff; }
+.linhaTempo li div { display: flex; flex-direction: column; padding-top: 4px; }
+.linhaTempo li div span { font-size: .84rem; color: var(--tinta-2); }
+.linhaTempo li:not(.feito):not(.atual) strong { color: var(--tinta-2); font-weight: 500; }
+.animar li.feito { animation: aparece .4s both; animation-delay: calc(var(--i) * 220ms); }
+.animarRes { animation: aparece .45s both; animation-delay: 1.1s; }
+@keyframes aparece { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.gerar { display: grid; gap: 12px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--linha); }
+.gerar :global(.caixa-info) { margin: 0; }
+.erroAcoes { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
+
+.resultado { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--linha); display: grid; gap: 14px; }
+.resultado h2 { color: var(--vinho); }
+.resultado :global(.caixa-info) { margin: 0; }
+.resTopo { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.resTopo :global(.sobretitulo) { margin: 0; }
+.subtit { font-size: .95rem; margin-bottom: 6px; }
+.pontos { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: .9rem; }
+.pontos li { display: flex; gap: 8px; align-items: flex-start; }
+.pontos :global(.ic) { margin-top: 2px; }
+.fortes :global(.ic) { color: var(--verde-txt); }
+.atencao :global(.ic) { color: var(--vinho); }

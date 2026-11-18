@@ -1,0 +1,20 @@
+.card {
+  display: flex; flex-direction: column; gap: 6px; height: 100%;
+  background: var(--branco); border: 1px solid var(--linha); border-radius: var(--raio);
+  padding: 18px; text-decoration: none; color: inherit;
+  box-shadow: 4px 6px 0 var(--cinza);
+  transition: transform .15s, box-shadow .15s;
+}
+.card:hover { transform: translate(-1px, -1px); box-shadow: 6px 8px 0 var(--lavanda); }
+.topo { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.nome { margin-top: 4px; font-size: 1.12rem; }
+.resumo { font-size: .9rem; color: var(--tinta-2); }
+.capt { margin-top: auto; padding-top: 8px; }
+.captNum { display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; font-size: .86rem; color: var(--tinta-2); margin-top: 8px; font-variant-numeric: tabular-nums; }
+.captNum strong { color: var(--tinta); }
+.captNum span { margin-left: auto; font-weight: 700; color: var(--vinho); }
+.captNum span.ok { color: var(--verde-txt); }
+.dados { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 8px 0 0; padding-top: 10px; border-top: 1px solid var(--linha); }
+.dados dt { font-size: .7rem; color: var(--tinta-2); }
+.dados dd { margin: 0; font-weight: 700; font-size: .88rem; font-variant-numeric: tabular-nums; }
+.vsCdi { font-size: .78rem; color: var(--verde-txt); font-weight: 600; }

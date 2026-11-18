@@ -1,0 +1,12 @@
+.kpis { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 12px; color: var(--tinta-2); font-size: .9rem; }
+.kpis strong { color: var(--vinho); font-variant-numeric: tabular-nums; }
+.referencia { display: flex; gap: 8px; align-items: flex-start; font-size: .82rem; color: var(--tinta-2); background: var(--branco); border: 1px solid var(--linha); border-radius: 14px; padding: 10px 12px; margin-bottom: 12px; }
+.referencia :global(.ic) { color: var(--verde-txt); margin-top: 2px; }
+.referencia strong { color: var(--tinta); }
+.filtros { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; align-items: end; background: var(--claro); border-radius: var(--raio); padding: 14px; margin-bottom: 16px; }
+.largo { grid-column: 1 / -1; }
+.contagem { grid-column: 1 / -1; color: var(--tinta-2); font-size: .84rem; }
+.grade { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.vazio { text-align: center; padding: 32px 16px; background: var(--claro); border-radius: var(--raio); display: grid; gap: 12px; justify-items: center; }
+.legenda :global(.linhas dd) { font-weight: 500; font-size: .84rem; }
+@media (max-width: 359px) { .filtros { grid-template-columns: 1fr; } }

@@ -1,0 +1,34 @@
+.voltar { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; text-decoration: none; margin-bottom: 14px; color: var(--tinta); font-size: .9rem; }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.titulo { margin: 10px 0 6px; font-size: 1.7rem; }
+.capt { margin: 18px 0; }
+.capt :global(.barra) { height: 12px; }
+.capt p { margin-top: 8px; color: var(--tinta-2); font-size: .9rem; font-variant-numeric: tabular-nums; }
+.capt strong { color: var(--vinho); font-size: 1.05rem; }
+.h2 { font-size: 1.05rem; margin: 22px 0 6px; }
+
+.comparacao { margin-top: 18px; background: var(--branco); border: 1px solid var(--linha); border-radius: var(--raio); padding: 14px; display: grid; gap: 10px; }
+.comparacao h2 { font-size: 1rem; }
+.barrasComp { display: grid; gap: 8px; }
+.barrasComp > div { display: grid; grid-template-columns: 92px 1fr auto; gap: 8px; align-items: center; font-size: .82rem; }
+.rotComp { color: var(--tinta-2); }
+.trilho { height: 10px; background: var(--claro); border-radius: 999px; overflow: hidden; }
+.trilho span { display: block; height: 100%; border-radius: 999px; }
+.valNeg { background: var(--vinho); }
+.valCdi { background: var(--marinho); }
+.barrasComp strong { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.verificados { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: .92rem; }
+.verificados li { display: flex; gap: 10px; align-items: flex-start; }
+.verificados :global(.ic) { color: var(--verde-txt); margin-top: 2px; }
+
+.relatorio { display: grid; gap: 6px; }
+.relatorio blockquote { margin: 0; padding: 10px 12px; border-left: 3px solid var(--vinho); background: var(--claro); border-radius: 0 10px 10px 0; font-size: .9rem; }
+
+.cta {
+  position: sticky; bottom: 76px; z-index: 5; margin: 24px -20px -28px; padding: 14px 20px 16px;
+  background: rgba(255, 247, 245, .96); border-top: 1px solid var(--linha); display: grid; gap: 8px;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.cta :global(.ajuda) { text-align: center; }
+.encerrado { display: flex; gap: 8px; align-items: flex-start; font-weight: 600; color: var(--verde-txt); font-size: .9rem; }
