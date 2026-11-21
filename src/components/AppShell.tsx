@@ -137,6 +137,32 @@ function Moldura({ children }: { children: ReactNode }) {
         </div>
       </div>
 
+      <aside className="lateral" aria-label="Sobre o protótipo">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={`${BASE}/img/logo-icone.png`} width={72} height={64} alt="" />
+        <p className="wm lateral-nome">
+          <b>MEI</b>nveste
+        </p>
+        <p>
+          Marketplace de empréstimo entre pessoas e MEIs: o investidor escolhe um negócio local aprovado, empresta direto para ele e
+          recebe em parcelas mensais.
+        </p>
+        <p>
+          <b>Para quem é:</b> MEIs sem crédito nos bancos e investidores que querem apoiar negócios locais.
+        </p>
+        <ul className="lateral-lista">
+          <li><Icone nome="calculadora" /><span><b>Simulador de crédito</b> pela tabela Price.</span></li>
+          <li><Icone nome="arquivo" /><span><b>Cadastro do MEI</b> com CNPJ e CEP consultados na BrasilAPI.</span></li>
+          <li><Icone nome="escudo" /><span><b>Parecer de risco</b> por regras.</span></li>
+          <li><Icone nome="grafico" /><span><b>Vitrine e carteira</b> com retorno comparado ao CDI do dia.</span></li>
+        </ul>
+        <a className="btn btn-sec btn-peq" href="https://github.com/dudabarbozat/meinveste-credito-p2p" target="_blank" rel="noreferrer">
+          <Icone nome="github" />
+          Ver o código no GitHub
+        </a>
+        <p className="lateral-nota">Projeto de pitch em equipe, reconstruído em 2026 como protótipo navegável.</p>
+      </aside>
+
       <div className="aparelho">
         <div className="barra-status" aria-hidden="true">
           <span>9:41</span>
